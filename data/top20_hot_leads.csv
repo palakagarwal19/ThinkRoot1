@@ -1,0 +1,21 @@
+lead_id,company,contact_name,title,email,industry,employees,tech_stack,pain_signal,funding_stage,lead_score,tier
+9,Coinbase,Amanda Roy,VP Engineering,amanda@coinbase.com,FinTech,6200,AWS|Docker|Kubernetes,Compliance and scaling pressure,Public,83,Hot
+18,Twilio,Maya Singh,VP Engineering,maya@twilio.com,Communications,5500,AWS|Kubernetes|Terraform,API reliability challenges,Public,81,Hot
+2,Snowflake,David Kumar,CTO,david@snowflake.com,Cloud Data,7000,AWS|Docker|Terraform,Rapid infra growth,Public,80,Hot
+8,HubSpot,Kevin Brown,Director Platform,kevin@hubspot.com,SaaS,7500,AWS|Terraform|Datadog,Platform scaling complexity,Public,80,Hot
+20,Shopify,Grace Lin,CTO,grace@shopify.com,Ecommerce,10000,GCP|Kubernetes|Datadog,Commerce infra scale pressure,Public,80,Hot
+15,Dropbox,Olivia White,VP Engineering,olivia@dropbox.com,SaaS,6000,AWS|Terraform|Python,Infrastructure reliability,Public,76,Warm
+1,Stripe,Sarah Chen,VP Engineering,sarah@stripe.com,FinTech,8000,Kubernetes|AWS|Datadog,Scaling microservices complexity,Series E,75,Warm
+11,MongoDB,Laura Kim,CTO,laura@mongodb.com,Database,5000,GCP|Kubernetes|Terraform,Database scale issues,Public,75,Warm
+3,Datadog,Emily Ross,Head of Platform,emily@datadog.com,Observability,5000,Kubernetes|GCP,Platform reliability pressure,Public,73,Warm
+6,OpenAI,Jason Wu,CTO,jason@openai.com,AI,4500,Azure|Kubernetes|OpenAI APIs,LLM scaling reliability,Private,71,Warm
+12,Confluent,James Park,VP Engineering,james@confluent.com,Data Streaming,3000,AWS|Kafka|Kubernetes,Streaming reliability pressure,Public,71,Warm
+19,Asana,Chris Young,Director Platform,chris@asana.com,SaaS,1700,AWS|Docker,Product scaling pain,Public,70,Warm
+16,Figma,Ryan Hall,CTO,ryan@figma.com,Collaboration,1600,AWS|Docker|Kubernetes,Realtime scaling challenges,Private,68,Warm
+13,Elastic,Sophia Green,Head of Platform,sophia@elastic.com,Search,2800,AWS|Docker|Elastic,Observability scaling needs,Public,65,Warm
+5,Zapier,Rachel Adams,Director Infrastructure,rachel@zapier.com,SaaS,1200,AWS|Docker,Automation scaling issues,Series C,63,Warm
+10,Plaid,Rohan Mehta,Head of Infrastructure,rohan@plaid.com,FinTech,1500,AWS|Kubernetes|Redis,API reliability risks,Series D,63,Warm
+14,Canva,Daniel Scott,Director Infrastructure,daniel@canva.com,SaaS,4000,GCP|Kubernetes|Datadog,Global scaling pressure,Private,63,Warm
+7,Anthropic,Nina Patel,VP Engineering,nina@anthropic.com,AI,1800,AWS|Kubernetes|Python,Model governance pressure,Series D,58,Cold
+4,Notion,Michael Lee,VP Engineering,michael@notion.so,SaaS,2000,AWS|Kubernetes,Engineering team expansion,Series C,56,Cold
+17,Airtable,Ethan Moore,Head of Engineering,ethan@airtable.com,SaaS,1100,AWS|Redis|Docker,Platform expansion issues,Series D,55,Cold
