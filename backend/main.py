@@ -122,6 +122,25 @@ def health():
         "data_source": "Apollo CSV + Clay/Apollo API fallback",
     }
 
+@app.get("/api/health")
+def health():
+    leads = get_leads()
+    return {
+        "status": "200 OK",
+        "system": "NeuroLead",
+        "version": "1.0.0",
+        "total_leads_loaded": len(leads),
+        "agents": [
+            "SignalDiscoveryAgent",
+            "EnrichmentAgent",
+            "MLScoringEngine",
+            "BuyingCommitteeGraphEngine",
+            "LLMOutreachAgent",
+            "ABTestingAgent",
+            "ResponseLearningAgent",
+        ],
+        "data_source": "Apollo CSV + Clay/Apollo API fallback",
+    }
 
 # ── Leads ─────────────────────────────────────────────────────────────────────
 
