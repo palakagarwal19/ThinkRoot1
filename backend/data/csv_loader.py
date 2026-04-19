@@ -13,6 +13,7 @@ from pathlib import Path
 from typing import Optional
 from dotenv import load_dotenv
 
+
 # Load .env if present
 load_dotenv()
 
@@ -23,6 +24,7 @@ CSV_PATH = os.getenv(
     "LEADS_CSV_PATH",
     str(BASE_DIR / "apollo-contacts-export-(2)-(1)-Default-view-export-1776574386695.csv"),
 )
+
 
 # ── column aliases (CSV header → internal key) ──────────────────────────────
 COL_MAP = {

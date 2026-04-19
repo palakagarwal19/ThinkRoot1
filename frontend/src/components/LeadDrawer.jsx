@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { X, Mail, Linkedin, Copy, Check, ExternalLink, Zap, Brain } from 'lucide-react';
+import { X, Mail, Link, Copy, Check, ExternalLink, Zap, Brain } from 'lucide-react';
 import { getLead, getLeadOutreach, submitResponse } from '../api';
 import { TierBadge, ScoreBar, Spinner } from './UI';
 
@@ -136,7 +136,7 @@ export default function LeadDrawer({ leadId, onClose }) {
                 <div style={{ display: 'flex', gap: 8, marginTop: 14 }}>
                   {data.lead?.linkedin_url && (
                     <a href={data.lead.linkedin_url} target="_blank" rel="noreferrer" className="btn btn-ghost" style={{ fontSize: 12 }}>
-                      <Linkedin size={14} /> LinkedIn
+                      <Link size={14} /> LinkedIn
                     </a>
                   )}
                   {data.lead?.website && (

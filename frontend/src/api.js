@@ -1,9 +1,14 @@
-const BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+const BASE = import.meta.env.VITE_API_URL || 'http://localhost:4000';
 
 async function req(path, options = {}) {
+  const headers = { ...(options.headers || {}) };
+  if (options.body !== undefined && options.body !== null && !headers['Content-Type'] && !headers['content-type']) {
+    headers['Content-Type'] = 'application/json';
+  }
+
   const res = await fetch(`${BASE}${path}`, {
-    headers: { 'Content-Type': 'application/json' },
     ...options,
+    headers,
   });
   if (!res.ok) {
     const err = await res.json().catch(() => ({ detail: res.statusText }));

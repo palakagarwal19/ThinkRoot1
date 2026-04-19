@@ -131,7 +131,7 @@ Public
 
 Why Hot Lead?
 
-- Large enterprise (8000 employees)
+- Large enterprise (4000 employees)
 
 - Strong technical fit:
 Kubernetes|AWS|Datadog

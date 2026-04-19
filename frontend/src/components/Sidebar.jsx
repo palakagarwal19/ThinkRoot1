@@ -13,7 +13,16 @@ const NAV = [
   { label: 'Pipeline', to: '/pipeline', icon: Cpu },
 ];
 
-export default function Sidebar() {
+export default function Sidebar({ backendOnline }) {
+  let statusEl;
+  if (backendOnline === true) {
+    statusEl = <div className="status-dot">Backend online</div>;
+  } else if (backendOnline === false) {
+    statusEl = <div className="status-dot-offline">Backend offline</div>;
+  } else {
+    statusEl = <div style={{ opacity: 0.6 }}>Checking…</div>;
+  }
+
   return (
     <aside className="sidebar">
       <div className="sidebar-logo">
@@ -42,7 +51,7 @@ export default function Sidebar() {
       </nav>
 
       <div className="sidebar-footer">
-        <div className="status-dot">Backend online</div>
+        {statusEl}
         <div style={{ marginTop: 4, fontSize: 11, opacity: 0.6 }}>P95.ai · NeuroLead v1.0</div>
       </div>
     </aside>

@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { Search, ChevronUp, ChevronDown, ChevronLeft, ChevronRight, Linkedin, ExternalLink } from 'lucide-react';
+import { Search, ChevronUp, ChevronDown, ChevronLeft, ChevronRight, Link, ExternalLink } from 'lucide-react';
 import { getLeads } from '../api';
 import { Spinner, TierBadge, ScoreBar, EmptyState } from '../components/UI';
 import LeadDrawer from '../components/LeadDrawer';
@@ -116,7 +116,7 @@ export default function Leads() {
                             style={{ color: 'var(--text-muted)', transition: 'color 0.2s' }}
                             onMouseEnter={e => e.currentTarget.style.color = 'var(--accent)'}
                             onMouseLeave={e => e.currentTarget.style.color = 'var(--text-muted)'}>
-                            <Linkedin size={15} />
+                            <Link size={15} />
                           </a>
                         )}
                         {lead.website && (
