@@ -122,11 +122,11 @@ def health():
         "data_source": "Apollo CSV + Clay/Apollo API fallback",
     }
 
-@app.get("/api/health")
+@app.get("/health")
 def health():
     leads = get_leads()
     return {
-        "status": "200 OK",
+        "status": "online",
         "system": "NeuroLead",
         "version": "1.0.0",
         "total_leads_loaded": len(leads),
