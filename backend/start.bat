@@ -32,8 +32,8 @@ python --version
 REM Start the server
 echo.
 echo Starting NeuroLead API server...
-echo API Docs: http://localhost:8000/docs
-echo ReDoc:    http://localhost:8000/redoc
-echo Health:   http://localhost:8000/
+echo API Docs: http://localhost:4000/docs
+echo ReDoc:    http://localhost:4000/redoc
+echo Health:   http://localhost:4000/
 echo.
 python main.py
