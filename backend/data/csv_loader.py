@@ -13,11 +13,15 @@ from pathlib import Path
 from typing import Optional
 from dotenv import load_dotenv
 
+# Load .env if present
 load_dotenv()
+
+# Go to project root safely
+BASE_DIR = Path(__file__).resolve().parents[2]
 
 CSV_PATH = os.getenv(
     "LEADS_CSV_PATH",
-    str(Path(__file__).parent.parent / "apollo-contacts-export-(2)-(1)-Default-view-export-1776574386695.csv"),
+    str(BASE_DIR / "apollo-contacts-export-(2)-(1)-Default-view-export-1776574386695.csv"),
 )
 
 # ── column aliases (CSV header → internal key) ──────────────────────────────
